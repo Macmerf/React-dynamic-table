@@ -1,22 +1,24 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Button, Col, Container, Placeholder, Row, Table } from 'react-bootstrap';
+import { Button, Col, Container, Row, Table } from 'react-bootstrap';
 import axios from 'axios';
 import { IUser } from './types/types';
 import UserRow from './components/UserRow';
 import UserHeader from './components/UserHeader';
 import { InView } from 'react-intersection-observer';
+import UserModal from './components/UserModal';
 
 
 
 function App() {
   const [users, setUsers] = useState<IUser[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-
+  const [showModal,setShowModal] = useState(false);
 
   useEffect(() => {
     fetchUsers();
+    // eslint-disable-next-line
   }, [])
 
   const loadMore = (e: boolean) => {
@@ -41,11 +43,11 @@ function App() {
     <div className="App">
       <Container>
         <Row>
-          <Col xs={12} md={6}>
+          <Col xs={12} >
             <h1 className="my-3 text-center">Таблица пользователей</h1>
           </Col>
-          <Col xs={12} md={6}>
-            <Button className='my-3' variant="outline-primary">Добавить пользователя</Button>
+          <Col className='d-flex justify-content-center' xs={12}>
+            <Button onClick={()=>setShowModal(true)} className='my-3' variant="outline-primary">Добавить пользователя</Button>
           </Col>
           <Table striped bordered hover responsive="lg">
             <thead>
@@ -62,7 +64,7 @@ function App() {
           </InView>
         </Row>
       </Container>
-
+         {showModal && <UserModal users={users}/>} 
     </div>
   );
 }

@@ -9,8 +9,10 @@ const UserHeader :FC<UserHeaderProps> = ({users}) => {
   return (
     <tr>
     {users[0] ? Object.keys(users[0]).map((headerName, index) => {
-      return <th key={index}>{headerName}</th>
-    }) : undefined}
+      return <th key={index}>{headerName.replaceAll('_', ' ')}</th>
+    }) 
+    : 
+    undefined}
   </tr>
   )
 }

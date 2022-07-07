@@ -7,7 +7,7 @@ interface UserRowrops{
 
 const UserRow:FC<UserRowrops>  = ({user}) =>{
   return (
-    <tr key={user.id * Date.now()}>
+    <tr key={user.id}>
     <td>{user.id}</td>
     <td>{user.name}</td>
     <td>{user.birthday}</td>
