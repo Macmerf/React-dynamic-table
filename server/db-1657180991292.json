@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": 35,
+      "name": "Mr. Jasmin Kub",
+      "phone": "573-621-6667",
+      "email": "Okey_Grant@Rebekah.ca",
+      "card_type": "MasterCard",
+      "birthday": "1974-08-18"
+    },
+    {
+      "id": 88,
+      "name": "Mr. Jamaal Daugherty",
+      "phone": "008-306-7414",
+      "email": "April_Auer@gmail.com",
+      "card_type": "American Express",
+      "birthday": "1970-11-03"
+    },
+    {
+      "id": 69,
+      "name": "Ms. Susanna Schimmel",
+      "phone": "742-767-6977",
+      "email": "Ray.Price@yahoo.com",
+      "card_type": "MasterCard",
+      "birthday": "2000-10-20"
+    },
+    {
+      "id": 43,
+      "name": "Miss Buster Goyette",
+      "phone": "291-062-2750",
+      "email": "Pat.Franecki@hotmail.com",
+      "card_type": "MasterCard",
+      "birthday": "1986-04-27"
+    },
+    {
+      "id": 24,
+      "name": "Mrs. Arnoldo Terry",
+      "phone": "412-452-0268",
+      "email": "Cornelius.Toy@Schroeder.info",
+      "card_type": "Visa",
+      "birthday": "2004-11-22"
+    },
+    {
+      "id": 66,
+      "name": "Mrs. Ernestine Emmerich",
+      "phone": "072-721-2890",
+      "email": "Batz.Craig@gmail.com",
+      "card_type": "Visa",
+      "birthday": "1987-06-17"
+    },
+    {
+      "id": 23,
+      "name": "Mrs. Gaetano Bahringer",
+      "phone": "472-509-8058",
+      "email": "Fanny.Jones@hotmail.com",
+      "card_type": "Visa",
+      "birthday": "2010-01-19"
+    },
+    {
+      "id": 21,
+      "name": "Ms. Meta Wolff",
+      "phone": "425-881-4573",
+      "email": "Nat.Schultz@Rippin.com",
+      "card_type": "Visa",
+      "birthday": "2000-10-23"
+    },
+    {
+      "id": 18,
+      "name": "Miss Bonnie Beahan",
+      "phone": "666-479-0305",
+      "email": "Eloise_Quigley@hotmail.com",
+      "card_type": "MasterCard",
+      "birthday": "1995-12-01"
+    },
+    {
+      "id": 38,
+      "name": "Mr. Jamarcus Stiedemann",
+      "phone": "295-139-7198",
+      "email": "Alford.Schimmel@Jast.name",
+      "card_type": "Visa",
+      "birthday": "1993-10-06"
+    },
+    {
+      "id": 8,
+      "name": "Miss Dallas Wolf",
+      "phone": "914-580-9335",
+      "email": "Schuster_Franco@Kelsi.org",
+      "card_type": "American Express",
+      "birthday": "2004-08-08"
+    },
+    {
+      "id": 27,
+      "name": "Mr. Khalil Herzog",
+      "phone": "918-135-3961",
+      "email": "Roderick_Collins@hotmail.com",
+      "card_type": "Visa",
+      "birthday": "1982-02-03"
+    },
+    {
+      "id": 46,
+      "name": "Dr. Trisha Osinski",
+      "phone": "473-220-1132",
+      "email": "Jaclyn_Kreiger@yahoo.com",
+      "card_type": "MasterCard",
+      "birthday": "1994-08-30"
+    },
+    {
+      "id": 47,
+      "name": "Ms. Alfreda Emmerich",
+      "phone": "489-223-9344",
+      "email": "Gay.Cole@Demond.biz",
+      "card_type": "MasterCard",
+      "birthday": "1991-01-03"
+    },
+    {
+      "id": 54,
+      "name": "Dr. Noemie Reilly",
+      "phone": "399-066-3172",
+      "email": "Eulalia_Lockman@hotmail.com",
+      "card_type": "American Express",
+      "birthday": "1983-05-20"
+    }
+  ]
+}
