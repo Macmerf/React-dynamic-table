@@ -2,7 +2,7 @@
   white-space: nowrap !important;
 }
 
-.table{
+.table {
   min-height: 100vh !important;
 }
 
@@ -33,7 +33,7 @@
 .loader:after {
   position: absolute;
   top: 0;
-  content: '';
+  content: "";
 }
 .loader:before {
   left: -1.5em;
@@ -68,46 +68,82 @@
   }
 }
 
-
-.modal-wrapper{
+._fixed {
+  height: 100vh;
+  overflow: hidden;
+}
+.modal-wrapper {
   position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: rgba(44, 45, 51, 0.76);
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
-.modal-window{
+.modal-window {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(50%,50%);
+  transform: translate(-50%, -50%);
   background-color: #fff;
   border-radius: 20px;
-  padding: 5%;
-  max-width: 45%;
+  width: 45%;
+  animation: open-modal 0.3s ease-in;
+}
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
 }
 
-@media (max-width:768px) {
-  .modal-window{
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+@media (max-width: 768px) {
+  .modal-window {
     max-width: 70%;
   }
 }
 
-@media (max-width:565px) {
-  .modal-window{
+@media (max-width: 565px) {
+  .modal-window {
     max-width: 95%;
   }
 }
 
-@keyframes open-modal{
-  0%{
+@keyframes open-modal {
+  0% {
     opacity: 0;
-    transform: scale(0.1);
+    transform: translate(-50%, -50%) scale(0.1);
   }
-  100%{
+  100% {
     opacity: 1;
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.added-user{
+  animation: added 2s;
+}
+
+
+@keyframes added {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

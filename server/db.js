@@ -2,9 +2,9 @@ const casual = require("casual");
 
 module.exports = () => {
   const data = { users: [] };
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 0; i < 15; i++) {
     data.users.push({
-      id: casual.integer((from = 1), (to = 1000)),
+      id: casual.random +i,
       name: casual.name,
       birthday:casual.date(format = 'YYYY-MM-DD'),
       phone: casual.phone,
